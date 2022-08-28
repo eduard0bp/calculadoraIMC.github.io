@@ -5,13 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="assets/style.css" />
 
     <title>Calculadora de IMC</title>
   </head>
   <body>
-    
-
+    <main>
+      <div class="container">
+        <div class="title">Calculadora - IMC</div>
+        <div class="input">
+          <label for="">Nome: </label>
+          <input type="text" id="nome" placeholder="DIGITE SEU NOME" />
+        </div>
+        <div class="input">
+          <label for="">Altura: </label>
+          <input type="number" id="altura" placeholder="DIGITE SUA ALTURA" />
+        </div>
+        <div class="input">
+          <label for="">Peso: </label>
+          <input type="number" id="peso" placeholder="DIGITE SEU PESO" />
+        </div>
+        <button id="calcular">CALCULAR</button>
+        <div class="result" id="resultado"></div>
+      </div>
+    </main>
     <script src="assets/script.js"></script>
   </body>
 </html>
