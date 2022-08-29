@@ -33,7 +33,7 @@ main{
   height: 50px;
   font: bold 2.5rem serif;
   border-bottom: solid 5px black;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .input {
@@ -74,11 +74,17 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: white;
+  color: black
 }
 
 .result{
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
   align-items: center;
   text-align: center;
   width: 300px;
@@ -97,4 +103,5 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+  font: italic 1.5rem serif;
 }
