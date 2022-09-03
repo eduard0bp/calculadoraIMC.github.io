@@ -12,7 +12,7 @@ function imc() {
     let classificacao = ''
     if (valorIMC < 18.5) {
       classificacao = 'Abaixo do peso.'
-    }  else if (valorIMC < 25) {
+    } else if (valorIMC < 25) {
       classificacao = 'Peso ideal (parabéns).'
     } else if (valorIMC < 30) {
       classificacao = 'Levemente acima do peso.'
@@ -24,7 +24,9 @@ function imc() {
       classificacao = 'Obesidade III (mórbida). Cuidado! Procure um médico.'
     }
 
-    resultado.textContent = `Olá ${nome} seu IMC é ${valorIMC.toFixed(2)} e sua classificação é ${classificacao}`
+    resultado.textContent = `Olá ${nome} seu IMC é ${valorIMC.toFixed(
+      2
+    )} e sua classificação é ${classificacao}`
   } else {
     resultado.textContent = 'Preencha todos os campos!'
   }
